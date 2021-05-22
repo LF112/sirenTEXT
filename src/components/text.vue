@@ -1,6 +1,5 @@
 <template>
 	<p text ref="aims">Hello World!</p>
-	<p text ref="test">Hello World!</p>
 	<div>
 		<button @click="run">
 			重播
@@ -17,10 +16,17 @@ export default {
 		},
 		sirenAn(el, text = '') {
 			const context = text == '' ? el.textContent : text
-			let Placeholder = ''
-			for (let i = 0; i < context.length * 2 + 5; i++)
-				Placeholder = Placeholder + '/'
-			this.$refs.test.textContent = Placeholder
+            const delay = 0 //延迟执行 | 暂停多少毫秒再执行
+			
+            const An = setTimeout(() => {
+                while (1)
+                    switch ((r.prev = r.next)) {
+
+                    }
+            }, delay)
+
+            console.log(An)
+            clearTimeout(An) // 执行前先消除
 		}
 	}
 }

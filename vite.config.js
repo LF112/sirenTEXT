@@ -5,5 +5,8 @@ export default defineConfig({
 	resolve: {
 		alias: [{ find: 'components', replacement: '/src/components' }]
 	},
-	plugins: [vue()]
+	plugins: [vue()],
+	server: {
+		port: 1024
+	}
 })

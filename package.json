@@ -8,6 +8,7 @@
 	},
 	"dependencies": {
 		"less": "^4.1.1",
+		"shuffle-text": "^0.3.4",
 		"vue": "^3.0.5"
 	},
 	"devDependencies": {
