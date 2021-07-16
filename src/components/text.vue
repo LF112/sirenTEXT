@@ -42,7 +42,7 @@ export default {
 				else {
 					content = el.innerHTML.split('')
 					SlashIndex = el.innerHTML.length
-					setTimeout(Fn2, 100)
+					setTimeout(Fn2, 80)
 				}
 			}
 
@@ -63,7 +63,7 @@ export default {
 					} else content[i] = ''
 				}
 				el.innerHTML = content.join('')
-				if (SlashCount < SlashIndex) setTimeout(Fn2, 20)
+				if (SlashCount < SlashIndex) setTimeout(Fn2, 30)
 				else if (!Done) {
 					SlashCount = 0
 					content = el.innerHTML.split('')
@@ -81,7 +81,7 @@ export default {
 
 <style scoped>
 [text] {
-	font-family: 'Geometos', 'Sans-Bold', 'SourceHanSansCN-Bold';
+	font-family: 'randFont', 'Sans-Bold', 'SourceHanSansCN-Bold';
 	color: #e2e4e8;
 	font-size: 2em;
 	user-select: none;
@@ -89,5 +89,10 @@ export default {
 	font-weight: 600;
 	letter-spacing: 2px;
 	text-align: left;
+}
+@font-face {
+	font-family: 'randFont';
+	font-display: swap;
+	src: url('./src/randfont.ttf') format('truetype');
 }
 </style>
