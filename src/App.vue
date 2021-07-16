@@ -50,6 +50,7 @@ main {
 	align-items: center;
 	> div {
 		text-align: center;
+		min-width: 300px;
 		> div {
 			margin-top: 15px;
 			width: 100%;
